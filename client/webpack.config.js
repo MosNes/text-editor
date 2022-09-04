@@ -23,7 +23,7 @@ module.exports = () => {
       //workbox plugin to set up service worker
       new InjectManifest({
         //points to the service worker config file
-        swSrc: './src/src-sw.js',
+        swSrc: './src-sw.js',
         //sets the name of the service worker file generated in dist folder
         swDest: 'service-worker.js'
       })
