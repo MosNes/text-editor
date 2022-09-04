@@ -28,4 +28,18 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
 // image caching
-registerRoute();
+registerRoute(
+  ({request}) => request.destination === 'image',
+  new CacheFirst({
+    cacheName: 'image-cache',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0,200]
+      }),
+      new ExpirationPlugin({
+        maxEntries: 1,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      })
+    ]
+  })
+);
