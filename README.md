@@ -1,7 +1,7 @@
 # Text Editor Webpack
 
  ## Badges
-  \  
+    
   ![text-editor](https://img.shields.io/github/languages/top/MosNes/text-editor)
 
   ![text-editor](https://img.shields.io/github/languages/count/MosNes/text-editor)
