@@ -5,11 +5,11 @@ import '../css/style.css';
 
 
 //import static Logo
-import Logo from '../images/logo.png';
+import Icon from '../images/icon_96x96.png';
 
-//add logo to Nav bar
+//add icon to Nav bar
 window.addEventListener('load', () => {
-  document.getElementById('logo').src= Logo;
+  document.getElementById('icon').src= Icon;
 })
 
 const main = document.querySelector('#main');
