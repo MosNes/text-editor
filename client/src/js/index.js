@@ -3,8 +3,18 @@ import Editor from './editor';
 import './database';
 import '../css/style.css';
 
+
+//import static Logo
+import Logo from '../images/logo.png';
+
+//add logo to Nav bar
+window.addEventListener('load', () => {
+  document.getElementById('logo').src= Logo;
+})
+
 const main = document.querySelector('#main');
 main.innerHTML = '';
+
 
 const loadSpinner = () => {
   const spinner = document.createElement('div');
